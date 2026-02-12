@@ -32,13 +32,13 @@ const Skills = () => {
   };
 
   return (
-    <section id="skills" className="space-y-4 md:space-y-8 -mt-14">
+    <section id="skills" className="space-y-4 md:space-y-8 -mt-19">
       
       <div className="flex items-center gap-3">
         <h2 className="text-xs md:text-xl font-black uppercase tracking-[0.2em] italic text-emerald-400">
           04. Technical Skills
         </h2>
-        <div className="h-[1px]  flex-grow" />
+        <div className="h-[1px] bg-black/50 flex-grow" />
       </div>
 
       <div className=" grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">

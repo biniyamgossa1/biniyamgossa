@@ -8,9 +8,9 @@ import Contact from './components/sections/Contact';
 
 function App() {
   return (
-    <div className="min-h-screen bg-transparent transition-colors duration-500">
+    <div className="min-h-screen bg-transparent scroll-smooth transition-colors duration-500">
       <Navbar />
-      <main className="max-w-5xl mx-auto px-6 pt-32 space-y-24 pb-40">
+      <main className="max-w-5xl mx-auto px-6 pt-32 space-y-24 ">
         <section id="home"><Hero /></section>
         <section id="about" ><About /></section>
         <section id="skills"><Skills /></section>

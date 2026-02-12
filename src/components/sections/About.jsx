@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import legal from "../../assets/certificates/legal.jpg"
 import udacity from "../../assets/certificates/udacity.png"
+import resume from "../../assets/BINIYAM GOSSA MASTER CV.pdf"
 
 const About = () => {
   const [selectedImg, setSelectedImg] = useState(null);
@@ -31,7 +32,7 @@ const About = () => {
           <h2 className="text-xs md:text-xl font-black uppercase tracking-[0.2em] italic text-purple-500">
             01. About
           </h2>
-          <div className="h-[1px] bg-black/50 flex-grow" />
+          <div className="h-[1px] bg-gradient-to-r from-green-500 via-black to-transparent  flex-grow" />
         </div>
 
         <div className="grid grid-cols-2 gap-3 md:gap-5">
@@ -98,7 +99,7 @@ const About = () => {
           <h2 className="text-xs md:text-xl font-black uppercase tracking-[0.2em] italic text-blue-500">
             02. Certificates
           </h2>
-          <div className="h-[1px] bg-white/10 flex-grow" />
+          <div className="h-[1px] bg-gradient-to-r from-green-500 via-black to-transparent  flex-grow" />
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-5">
@@ -124,6 +125,72 @@ const About = () => {
           </div>
         </div>
       </div>
+
+    {/* ================= 03. CURRICULUM VITAE ================= */}
+<div className="space-y-6">
+  {/* Section Header */}
+  <div className="flex items-center gap-3">
+    <h2 className="text-xs md:text-xl font-black uppercase tracking-[0.2em] italic !text-emerald-500 shrink-0">
+      03. Curriculum Vitae
+    </h2>
+    <div className="h-[1px] bg-gradient-to-r from-green-500 via-black to-transparent  flex-grow" />
+  </div>
+
+  <div className="relative group overflow-hidden">
+    {/* The Card Body */}
+    <div className="glass-card flex flex-col md:flex-row border-l-4 border-l-emerald-500 bg-white dark:bg-white/5 transition-all duration-500 hover:shadow-[0_0_30px_rgba(16,185,129,0.1)]">
+      
+      {/* Visual Identity Side (Left) */}
+      <div className="p-6 md:p-8 flex-grow space-y-2">
+        <div className="flex items-center gap-2">
+          <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
+          <span className="text-[10px] font-mono font-bold text-emerald-500 uppercase tracking-[0.3em]">
+            System.Resume_v2.0
+          </span>
+        </div>
+        
+        <h3 className="text-2xl md:text-4xl font-black !text-black uppercase tracking-tighter italic leading-none">
+          BINIYAM <span className="text-green-500 border-b-2 border-emerald-500" s>GOSSA</span>
+        </h3>
+        
+        <p className="text-[12px] md:text-sm !text-gray-500 dark:!text-gray-400 font-medium max-w-md">
+          
+          Updated In February 2025.
+        </p>
+      </div>
+
+      {/* Action Side (Right) */}
+      <div className="flex flex-row md:flex-col border-t md:border-t-0 md:border-l border-black/5 dark:border-white/5">
+        
+        {/* VIEW ACTION */}
+        <a 
+          href={resume} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="flex-1 md:w-48 flex bg-black/10   items-center justify-center gap-3 p-6 text-[10px] font-black uppercase tracking-widest !text-black hover:bg-blue-500 hover:!text-yellow-500 transition-all duration-300"
+        >
+          <span className="text-red-500">01</span>
+          Preview
+        </a>
+
+        {/* DOWNLOAD ACTION */}
+        <a 
+          href={resume}
+          download="BINIYAM_GOSSA_KEBEDE_CV.pdf"
+          className="flex-1 md:w-48 flex items-center justify-center gap-3 p-6 text-[10px] font-black uppercase tracking-widest bg-emerald-500 !text-white hover:bg-emerald-600 transition-all duration-300 shadow-[inset_0_0_20px_rgba(0,0,0,0.1)]"
+        >
+          <span className="opacity-40">02</span>
+          Download
+        </a>
+      </div>
+    </div>
+
+    {/* Background Decorative Element */}
+    <div className="absolute -bottom-4 -right-2 opacity-[0.03] dark:opacity-[0.05] pointer-events-none select-none">
+      <h4 className="text-8xl font-black italic">CERTIFIED</h4>
+    </div>
+  </div>
+</div>
 
       {/* ================= MODAL OVERLAY ================= */}
       {selectedImg && (

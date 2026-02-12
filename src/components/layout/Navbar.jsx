@@ -1,6 +1,7 @@
 import React from 'react';
 import { Home, User, Zap, Briefcase, MessageSquare, FileText } from 'lucide-react';
-import ThemeToggle from '../ui/ThemeToggle';
+import logoImg from "../../../public/logo.png"
+import resume from "../../assets/BINIYAM GOSSA MASTER CV.pdf"
 
 const Navbar = () => {
   const navLinks = [
@@ -11,56 +12,55 @@ const Navbar = () => {
     { name: 'Contact', href: 'contact', icon: <MessageSquare size={20} /> },
   ];
 
-  const scrollToSection = (id) => {
+  // This is the most reliable smooth scroll function for PC
+  const handleScroll = (id) => {
     const element = document.getElementById(id);
     if (element) {
-      const offset = 100;
-      const bodyRect = document.body.getBoundingClientRect().top;
-      const elementRect = element.getBoundingClientRect().top;
-      const elementPosition = elementRect - bodyRect;
-      const offsetPosition = elementPosition - offset;
-
-      window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start', // Ensures it aligns to the top
+      });
     }
   };
 
   return (
     <>
-      {/* Brand Logo - mix-blend-difference makes it flip color based on background */}
-      <div className="absolute top-3 left-6 z-[100] mix-blend-difference">
-        <span className="text-xl font-black tracking-tighter text-white uppercase">
-          B<span className="text-purple-500">-PRIME</span>
+      {/* Brand Logo */}
+      <div className="absolute top-3 left-6 z-[100] mix-blend-difference flex items-center gap-2">
+        <img src={logoImg} alt="Logo" className="w-7 h-7 object-contain rounded-sm" />
+        <span className="text-xl font-black tracking-tighter !text-white uppercase">
+          B<span className="!text-green-500">-PRIME</span>
         </span>
       </div>
 
       <nav className="fixed bottom-6 left-1/2 -translate-x-1/2 md:left-auto md:right-8 md:top-1/2 md:-translate-y-1/2 md:translate-x-0 z-[100]">
-        {/* Dock: Black in Day, White in Night */}
-        <div className="flex md:flex-col items-center gap-2 p-2 bg-gray-900 dark:bg-white backdrop-blur-2xl rounded-3xl border border-white/10 dark:border-black/10 shadow-2xl transition-colors duration-500">
+        <div className="flex md:flex-col items-center gap-2 p-2 bg-gray-900 dark:bg-white backdrop-blur-2xl rounded-3xl border border-white/10 dark:border-black/10 shadow-2xl">
           
-          <div className="p-2 border-r md:border-r-0 md:border-b border-white/10 dark:border-black/10">
-            <ThemeToggle />
-          </div>
-
           {navLinks.map((link) => (
             <button 
               key={link.name} 
-              onClick={() => scrollToSection(link.href)}
+              onClick={() => handleScroll(link.href)} // Using the new function
               className="group relative w-12 h-12 flex items-center justify-center rounded-2xl hover:bg-purple-600 transition-all duration-300"
             >
-              {/* Icons: White in Day-Dock, Black in Night-Dock */}
-              <div className="text-white dark:text-black group-hover:text-white transition-colors">
+              <div className="!text-white dark:!text-black group-hover:!text-white transition-colors">
                 {link.icon}
               </div>
               
-              <span className="hidden md:block absolute right-16 px-3 py-1 rounded-lg bg-gray-900 text-white text-[10px] font-bold opacity-0 group-hover:opacity-100 transition-opacity uppercase tracking-widest pointer-events-none">
+              <span className="hidden md:block absolute right-16 px-3 py-1 rounded-lg bg-gray-900 !text-white text-[10px] font-bold opacity-0 group-hover:opacity-100 transition-opacity uppercase tracking-widest pointer-events-none">
                 {link.name}
               </span>
             </button>
           ))}
 
-          <button className="w-12 h-12 rounded-2xl bg-purple-600 text-white flex items-center justify-center shadow-lg active:scale-90 transition-all">
+          {/* CV Button */}
+          <a 
+            href={resume}
+            target="_blank"
+            rel="noopener noreferrer" 
+            className="group relative w-12 h-12 rounded-2xl bg-purple-600 !text-white flex items-center justify-center shadow-lg active:scale-90 transition-all hover:bg-purple-700"
+          >
             <FileText size={20} />
-          </button>
+          </a>
         </div>
       </nav>
     </>
