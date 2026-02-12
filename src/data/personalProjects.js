@@ -2,7 +2,7 @@ import the100 from "../assets/images/projects/100.jpg"
 import free from "../assets/images/projects/freetv.jpg"
 import locked from "../assets/images/projects/locked.jpg"
 import cof from "../assets/images/projects/coffee.jpg"
-import we from "../assets/images/projects/we.jpg"  
+import we from "../assets/images/projects/weather.jpg"  
 
 
 
