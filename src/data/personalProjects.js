@@ -1,5 +1,5 @@
 import the100 from "../assets/images/projects/100.jpg"
-import free from "../assets/images/projects/free tv.jpg"
+import free from "../assets/images/projects/freetv.jpg"
 import locked from "../assets/images/projects/locked.jpg"
 import cof from "../assets/images/projects/coffee.jpg"
 import Weather from "../assets/images/projects/we.jpg"
