@@ -8,10 +8,10 @@ export const academicProjects = [
     link: "https://hammer-car.vercel.app/",
     image:hammer
   },
-  {
-    title: "Hardware Management System",
-    description: "Academic project for tracking IT inventory and maintenance logs.",
-    tags: ["SQL", "JavaScript", "IT Support"],
-    link: "https://b-coffee.vercel.app/"
-  }
+  // {
+  //   title: "Hardware Management System",
+  //   description: "Academic project for tracking IT inventory and maintenance logs.",
+  //   tags: ["SQL", "JavaScript", "IT Support"],
+  //   link: "https://b-coffee.vercel.app/"
+  // }
 ];
