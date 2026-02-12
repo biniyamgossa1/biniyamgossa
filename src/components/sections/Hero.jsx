@@ -69,7 +69,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="px-4 sm:px-6 lg:px-8 -mt-12 overflow-hidden">
+    <section className="px-4 sm:px-6 lg:px-6 -mt-20 overflow-hidden">
       <div className="max-w-6xl mx-auto">
         <div className="flex items-center gap-6 sm:gap-8 md:gap-12">
 

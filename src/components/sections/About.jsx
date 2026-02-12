@@ -23,37 +23,37 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="-mt-12 md:mt-1 space-y-12">
+    <section id="about" className="-mt-16 md:mt-1 space-y-12">
 
       {/* ================= 01. ABOUT SECTION ================= */}
-      <div className="space-y-4">
+      <div className="space-y-1">
         <div className="flex items-center gap-3">
           <h2 className="text-xs md:text-xl font-black uppercase tracking-[0.2em] italic text-purple-500">
             01. About
           </h2>
-          <div className="h-[1px] bg-white/10 flex-grow" />
+          <div className="h-[1px] bg-black/50 flex-grow" />
         </div>
 
         <div className="grid grid-cols-2 gap-3 md:gap-5">
           {/* Main Bio Card */}
           <div className="glass-card col-span-2 md:col-span-1 p-6 md:p-8 flex flex-col justify-center relative overflow-hidden group">
-            <div className="absolute top-0 right-0 -mr-16 -mt-16 w-32 h-32 bg-green-500/10 rounded-full blur-3xl group-hover:bg-green-500/20 transition-all duration-500" />
+            <div className="absolute top-0 right-0 -mr-16 -mt-16 w-32 h-32 bg-green-500/40 rounded-full blur-3xl group-hover:bg-green-500/20 transition-all duration-500" />
 
             <div className="relative space-y-4">
               <div className="space-y-1">
-                <h3 className="text-lg md:text-2xl font-black text-gray-900 dark:text-white uppercase tracking-tighter italic">
+                <h3 className="text-lg md:text-2xl font-black text-gray-900 text-black uppercase tracking-tighter italic">
                   BSc Computer Science <span className="text-green-500">Graduate</span>
                 </h3>
                 <div className="h-1 w-12 bg-green-500 rounded-full" />
               </div>
 
-              <p className="text-[13px] md:text-base text-gray-600 dark:text-gray-300 leading-relaxed text-pretty">
-                Freshly graduated in <span className="text-gray-900 dark:text-white font-bold bg-green-500/10 px-1 rounded">February 2025</span>, 
-                I specialize in engineering <span className="text-gray-900 dark:text-white font-semibold">high-performance web interfaces</span> and 
+              <p className="text-[13px] md:text-base text-black text-black leading-relaxed text-pretty">
+                Freshly graduated in <span className=" text-red-500 font-bold bg-green-500/30 px-1 rounded">February 2025</span>, 
+                I specialize in engineering <span className="text-gray-900  font-semibold">high-performance web interfaces</span> and 
                 securing robust IT infrastructure. 
               </p>
 
-              <p className="text-[13px] md:text-base text-gray-600 dark:text-gray-300 leading-relaxed">
+              <p className="text-[13px] md:text-base text-black  leading-relaxed">
                 I am driven by a passion for solving complex problems and 
                 <span className="text-green-600 dark:text-green-400 font-medium"> developing applications with real-world impact</span>. 
                 Eager to contribute technical expertise to innovative teams and push the boundaries of modern technology.
@@ -109,7 +109,7 @@ const About = () => {
 
               <button
                 onClick={() => setSelectedImg(cert.img)}
-                className={`text-[10px] font-black bg-blue-600 uppercase tracking-[0.2em] px-4 py-1.5 rounded-sm outline-none hover:bg-blue-500 transition-all shadow-lg active:scale-95 ${cert.btn}`}
+                className={`text-[10px] font-black bg-blue-500 uppercase tracking-[0.2em] px-4 py-1.5 rounded-sm outline-none hover:bg-blue-500 transition-all shadow-lg active:scale-95 ${cert.btn}`}
               >
                 Show
               </button>
