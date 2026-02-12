@@ -37,7 +37,7 @@ const About = () => {
         <div className="grid grid-cols-2 gap-3 md:gap-5">
           {/* Main Bio Card */}
           <div className="glass-card col-span-2 md:col-span-1 p-6 md:p-8 flex flex-col justify-center relative overflow-hidden group">
-            <div className="absolute top-0 right-0 -mr-16 -mt-16 w-32 h-32 bg-green-500/40 rounded-full blur-3xl group-hover:bg-green-500/20 transition-all duration-500" />
+            <div className="absolute top-0 right-0 -mr-16 -mt-16 w-32 h-32 dark:bg-green-500/40  bg-green-500/40 rounded-full blur-3xl group-hover:bg-green-500/20 transition-all duration-500" />
 
             <div className="relative space-y-4">
               <div className="space-y-1">

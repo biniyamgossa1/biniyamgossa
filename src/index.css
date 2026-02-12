@@ -23,7 +23,7 @@ body {
 }
 
 /* Universal Text Visibility Fix */
-.dark :where(h1, h2, h3, p):not([class*="text-"]) {
+.dark :where(h1, h2, h3, p,):not([class*="text-"]) {
   color: #fffbfb;
 }
 

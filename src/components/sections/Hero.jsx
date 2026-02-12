@@ -50,7 +50,7 @@ const Hero = () => {
         <>
           <span>{displayedText.slice(0, splitAt)}</span>
           <span className="text-black dark:text-blue-500 ">{displayedText.slice(splitAt)}</span>
-        </>
+        </> 
       );
     } else {
       // Logic for "BSc Graduate — Feb 2025"
