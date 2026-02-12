@@ -3,7 +3,7 @@ import free from "../assets/images/projects/free tv.jpg"
 import locked from "../assets/images/projects/locked.jpg"
 import cof from "../assets/images/projects/coffee.jpg"
 import we from "../assets/images/projects/we.jpg"
-import { Coffee } from "lucide-react";
+
 
 export const personalProjects = [
   {
