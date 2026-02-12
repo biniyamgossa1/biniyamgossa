@@ -23,7 +23,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="-mt-16 md:mt-1 space-y-12">
+    <section id="about" className="-mt-16 md:mt-1 space-y-9">
 
       {/* ================= 01. ABOUT SECTION ================= */}
       <div className="space-y-1">

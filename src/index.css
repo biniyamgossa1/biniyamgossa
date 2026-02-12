@@ -7,13 +7,13 @@
 
 :root {
   background-color: var(--color-brand-bg-light);
-  color: #000000; /* Absolute black for day mode */
+  color: #464545; /* Absolute black for day mode */
   scroll-behavior: smooth;
 }
 
-.dark {
+.dark  {
   background-color: var(--color-brand-bg-dark);
-  color: #ffffff !important; /* Absolute white for dark mode */
+  color: #ffffff ; /* Absolute white for dark mode */
 }
 
 body {
@@ -23,8 +23,8 @@ body {
 }
 
 /* Universal Text Visibility Fix */
-.dark h1, .dark h2, .dark h3, .dark h4, .dark p, .dark span {
-  color: #ffffff !important;
+.dark :where(h1, h2, h3, p):not([class*="text-"]) {
+  color: #fffbfb;
 }
 
 section {

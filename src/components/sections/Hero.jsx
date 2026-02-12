@@ -49,7 +49,7 @@ const Hero = () => {
       return (
         <>
           <span>{displayedText.slice(0, splitAt)}</span>
-          <span className="text-black ">{displayedText.slice(splitAt)}</span>
+          <span className="text-black dark:text-blue-500 ">{displayedText.slice(splitAt)}</span>
         </>
       );
     } else {
@@ -62,7 +62,7 @@ const Hero = () => {
       return (
         <>
           <span>{displayedText.slice(0, splitAt)}</span>
-          <span className="text-red-500">{displayedText.slice(splitAt)}</span>
+          <span className="text-red-500 dark:text-red-500">{displayedText.slice(splitAt)}</span>
         </>
       );
     }
@@ -99,20 +99,20 @@ const Hero = () => {
                   style={{ fontSize: "clamp(1.3rem, 6vw, 3.8rem)" }}
                 >
                   {renderStyledText()}
-                  <span className="inline-block animate-pulse ml-1 text-gray-400">|</span>
+                  <span className="inline-block animate-pulse ml-1 text-blue-400">|</span>
                 </div>
               </h1>
             </div>
 
             <div className="mt-2 sm:mt-4">
               <p
-                className="uppercase tracking-[0.15em] sm:tracking-[0.3em] text-gray-600 dark:text-green-400/80 font-mono"
+                className="uppercase tracking-[0.15em] sm:tracking-[0.3em] text-gray-600 font-mono"
                 style={{ fontSize: "clamp(0.65rem, 2vw, 1rem)" }}
               >
                 Computer Science • Frontend • IT Security
               </p>
 
-              <div className="mt-4 px-4 py-2 w-fit rounded-full bg-green-500/10 border border-green-500/30 text-black text-[10px] sm:text-xs uppercase tracking-wider flex items-center gap-2">
+              <div className="mt-4 px-4 py-2 w-fit rounded-full bg-green-500/10 border border-green-500/30 text-[10px] sm:text-xs dark:text-white uppercase tracking-wider flex items-center gap-2">
                 <span className="w-2 h-2 bg-red-500 rounded-full animate-pulse" />
                 Available for Work
               </div>
