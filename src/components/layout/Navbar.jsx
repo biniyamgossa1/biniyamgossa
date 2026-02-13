@@ -34,7 +34,7 @@ const Navbar = () => {
       </div>
 
       <nav className="fixed bottom-6 left-1/2 -translate-x-1/2 md:left-auto md:right-8 md:top-1/2 md:-translate-y-1/2 md:translate-x-0 z-[100]">
-        <div className="flex md:flex-col items-center gap-2 p-2 bg-gray-900 dark:bg-white backdrop-blur-2xl rounded-3xl border border-white/10 dark:border-black/10 shadow-2xl">
+        <div className="flex md:flex-col items-center gap-2 p-2 bg-gradient-to-l from-green-300 to-blue-400 dark:bg-white backdrop-blur-2xl rounded-3xl border border-white/10 dark:border-black/10 shadow-2xl">
           
           {navLinks.map((link) => (
             <button 
@@ -42,7 +42,7 @@ const Navbar = () => {
               onClick={() => handleScroll(link.href)} // Using the new function
               className="group relative w-12 h-12 flex items-center justify-center rounded-2xl hover:bg-purple-600 transition-all duration-300"
             >
-              <div className="!text-white dark:!text-black group-hover:!text-white transition-colors">
+              <div className="!text-white  group-hover:!text-white transition-colors">
                 {link.icon}
               </div>
               
