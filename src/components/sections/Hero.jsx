@@ -112,7 +112,7 @@ const Hero = () => {
                 Computer Science • Frontend • IT Security
               </p>
 
-              <div className="mt-4 px-4 py-2 w-fit rounded-full bg-green-500/10 border border-green-500/30 text-[10px] sm:text-xs dark:text-white uppercase tracking-wider flex items-center gap-2">
+              <div className="mt-4 px-4 py-2 w-fit rounded-full bg-green-500/10 border border-green-500/30 text-[10px] sm:text-xs font-bold font-black animate-pulse  uppercase tracking-wider flex items-center gap-2">
                 <span className="w-2 h-2 bg-red-500 rounded-full animate-pulse" />
                 Available for Work
               </div>

@@ -28,7 +28,7 @@ const Navbar = () => {
       {/* Brand Logo */}
       <div className="absolute top-3 left-6 z-[100] mix-blend-difference flex items-center gap-2">
         <img src={logoImg} alt="Logo" className="w-7 h-7 object-contain rounded-sm" />
-        <span className="text-xl font-black tracking-tighter !text-white uppercase">
+        <span className="text-xl font-black tracking-tighter !text-black uppercase">
           B<span className="!text-green-500">-PRIME</span>
         </span>
       </div>

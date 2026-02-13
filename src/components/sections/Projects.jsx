@@ -63,10 +63,12 @@ const Projects = () => {
     <section id="projects" className="space-y-4 -mt-16 md:-mt-8" >
       {/* PERSONAL PROJECTS */}
       <div>
-        <div className="flex items-center justify-between mb-6 px-2">
+        <div className="flex items-center justify-between mb-6 px-2 gap-1">
           <h2 className="text-lg md:text-3xl font-black uppercase tracking-tighter italic text-gray-900 ">
             Personal <span className="text-purple-500">Labs</span>
           </h2>
+          <div className="h-[1px] bg-gradient-to-r from-green-500 via-black to-transparent  flex-grow" />
+
           <span className="text-[10px] md:text-xs text-black font-mono font-bold uppercase">
             QTY: {personalProjects.length}
           </span>
@@ -81,10 +83,12 @@ const Projects = () => {
 
       {/* ACADEMIC PROJECTS */}
       <div>
-        <div className="flex items-center justify-between mb-6 px-2">
+        <div className="flex items-center justify-between mb-6 px-2 gap-1">
           <h2 className="text-lg md:text-3xl font-black uppercase tracking-tighter italic text-blue-500">
             Academic
           </h2>
+          <div className="h-[1px] bg-gradient-to-r from-green-500 via-black to-transparent  flex-grow" />
+
           <span className="text-[10px] md:text-xs text-gray-500 font-mono font-bold uppercase">
             QTY: {academicProjects.length}
           </span>
