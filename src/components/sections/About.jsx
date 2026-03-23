@@ -8,14 +8,14 @@ const About = () => {
 
   const certificates = [
     {
-      name: "Legal",
+      name: "BSc",
       sub: "Hope Enterprise University College",
       color: "border-orange-500/20 text-orange-500",
       img: legal,
       btn: "text-white"
     },
     {
-      name: "Udacity",
+      name: "Nanodegree",
       sub: "Programming Fundamentals",
       color: "border-cyan-500/20 text-cyan-400",
       img: udacity,
